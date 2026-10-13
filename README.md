@@ -1,3 +1,6 @@
+![CI](https://github.com/rionurfadilah229/mini-data-lake/actions/workflows/ci.yml/badge.svg)
+
+
 **Mini Data Lake: Indonesian Earthquake Data (BMKG)**
 
 A small end-to-end data pipeline that pulls recent earthquake data from the public BMKG API, cleans it, and aggregates it into a daily summary table. The project follows a medallion architecture (bronze, silver, gold), stores data as Parquet files, and uses DuckDB with dbt for the analytical layer. Everything runs locally with no cloud account required.
