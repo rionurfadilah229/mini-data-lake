@@ -1,0 +1,4 @@
+name: gempa
+version: "1.0.0"
+profile: gempa
+model-paths: ["models"]

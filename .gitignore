@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+data/
+lake.duckdb
+dbt_gempa/target/
+dbt_gempa/logs/
+dbt_gempa/lake.duckdb

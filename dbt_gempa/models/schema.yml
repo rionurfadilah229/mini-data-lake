@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: silver
+    meta:
+      external_location: "../data/silver/{name}.parquet"
+    tables:
+      - name: gempa
+        columns:
+          - name: event_time_utc
+            tests: [not_null]
+          - name: magnitude
+            tests: [not_null]
+
+models:
+  - name: gempa_harian
+    columns:
+      - name: tanggal_wib
+        tests: [not_null, unique]
